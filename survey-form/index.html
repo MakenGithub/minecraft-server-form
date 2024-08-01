@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/minecraft-4');
+    </style>
+
+</head>
+<body>
+
+<!--TITULO PRINCIPAL-->
+
+    <div class="main">
+        <h1 id="title"><span class="minecraft-title">MINECRAFT</span> server for <strong>Maken007</strong></h1>
+        <p id="description">
+            Join our awesome community of builders and explorers! Help us create an epic world.<br>
+            Fill out the form to get started!</p>
+    </div>
+
+<!--FORMULARIO-->
+    <form action="submit" id="survey-form">
+
+        <h2 class="solicited-data">Personal data</h2>
+        
+        <section class="personal-data">
+
+        <label id="name-label">
+            Username 
+            <input class="" type="text" id="name" required placeholder="Gordon Freeman">
+        </label>
+
+        <label id="email-label">
+                Email address 
+            <input class="" type="email" id="email" required placeholder="name@example.com">
+        </label>
+
+        <label id="number-label">
+            Age 
+            <input class="" type="number" id="number" required min="13" max="120" placeholder="13">
+        </label>
+
+    </section>
+
+    <hr class="separator">
+
+<!--SELECT SECTION-->
+
+    <h2 class="solicited-data">What role do you want to play on the server?</h2>
+        <select id="dropdown">
+
+            <option value="1">
+                Administrator
+            </option>
+
+            <option value="2">
+                Player
+            </option>
+
+        </select>
+
+        <hr class="separator">
+
+<!--RADIO BUTTON SECTION-->
+
+    <h2 class="solicited-data">Game Mechanics:</h2>
+
+        <!--Grupo 1-->
+        <h3 class="checked-groups">How good are you at playing this game?</h3>
+
+    <section id="game-mechanics">
+
+        <label for="poor"><input id="poor" type="radio" value="1" name="group-1" checked>
+            Poor
+        </label>
+
+        <label for="average"><input id="average" type="radio" value="1" name="group-1" checked>
+            Average
+        </label>
+
+        <label for="very-good"><input id="very-good" type="radio" value="1" name="group-1" checked>
+            Very good
+        </label>
+
+        <!--Grupo 2-->
+        <h3 class="checked-groups">Do you know how to use command blocks in Minecraft?</h3>
+
+        <label for="yes"><input id="yes" type="radio" value="3" name="group-2" checked>
+            Yes
+        </label>
+
+        <label for="no"><input id="no" type="radio" value="4" name="group-2">
+            No
+        </label>
+
+        <hr class="separator">
+
+<!--CHECKBOXES SECTION-->
+        <h3 class="checked-groups">Are you familiar with any of these game modes?</h3>
+
+        <label for="pvp"><input id="pvp" type="checkbox" value="1">
+            PvP
+        </label>
+
+        <label for="bed-wars"><input id="bed-wars" type="checkbox" value="2">
+            Bed Wars
+        </label>
+
+        <label for="sky-wars"><input id="sky-wars" type="checkbox" value="3">
+            SkyWars
+        </label>
+
+        <label for="factions"><input id="factions" type="checkbox" value="4">
+            Factions
+        </label>
+
+    </section>
+
+    <hr class="separator">
+
+<!--TEXT AREA SECTION-->
+        <h2 class="solicited-data">What do you think makes Minecraft so fun?</h2>
+        <textarea placeholder="What I enjoy most about the game is..."></textarea>
+
+<!--SUBMIT BUTTON-->
+        <input type="submit" id="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
